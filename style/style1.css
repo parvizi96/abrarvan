@@ -1,0 +1,532 @@
+@font-face {
+  font-family: Yekabakh-Medium;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../font/Yekan _Bakh_Medium.ttf");
+}
+
+@font-face {
+  font-family: Yekabakh-Hairline;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../font/Yekan Bakh EN 01 Hairline.ttf");
+}
+
+@font-face {
+  font-family: Yekabakh-Light;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../font/Yekan Bakh EN 03 Light.ttf");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../font/eot/IRANSansWeb(FaNum)_Black.eot");
+  src: url("../font/eot/IRANSansWeb(FaNum)_Black.eot?#iefix") format("embedded-opentype"), url("../font/woff2/IRANSansWeb(FaNum)_Black.woff2") format("woff2"), url("../font/woff/IRANSansWeb(FaNum)_Black.woff") format("woff"), url("../font/ttf/IRANSansWeb(FaNum)_Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../font/eot/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("../font/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"), url("../font/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"), url("../font/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"), url("../font/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/eot/IRANSansWeb(FaNum)_Medium.eot");
+  src: url("../font/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"), url("../font/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"), url("../font/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"), url("../font/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/eot/IRANSansWeb(FaNum)_Light.eot");
+  src: url("../font/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"), url("../font/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"), url("../font/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"), url("../font/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../font/eot/IRANSansWeb(FaNum)_UltraLight.eot");
+  src: url("../font/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"), url("../font/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"), url("../font/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"), url("../font/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/eot/IRANSansWeb(FaNum).eot");
+  src: url("../font/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), url("../font/woff2/IRANSansWeb(FaNum).woff2") format("woff2"), url("../font/woff/IRANSansWeb(FaNum).woff") format("woff"), url("../font/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F7FA;
+  font-family: IRANSans;
+}
+
+.container {
+  display: flex;
+  background-color: #F5F7FA;
+  height: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container .project-menu {
+  flex-basis: 1140px;
+  display: flex;
+  padding: 50px 0px;
+  flex-direction: column;
+}
+
+.container .project-menu-paraghraph {
+  text-align: center;
+}
+
+.container .project-menu-tabs {
+  background-color: transparent;
+  justify-content: end;
+}
+
+.container .project-menu-tabs-content:not(#valuating_project) {
+  display: none;
+}
+
+.container .project-menu-tabs-content {
+  background-color: #FFFFFF;
+}
+
+.container .project-menu-tabs-content-accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .project-menu-tabs-content-accordion .fa-circle {
+  color: #20C5BA;
+  font-size: 10px;
+}
+
+.container .project-menu-tabs-content-accordion-button {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 100%;
+  background-color: #F5F7FA;
+  color: #9DB0CB;
+  transition: all 0.3s;
+}
+
+.container .project-menu-tabs-content-accordion-button:hover {
+  background-color: #20C5BA;
+  color: #FFFFFF;
+}
+
+.container .project-menu-tabs-content-panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.container .project-menu-tabs-content-panel-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .project-menu-tabs-content-panel-icons-icon {
+  background-color: #F5F7FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-basis: 170px;
+  height: 159px;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+.container .project-menu-tabs-content-panel-icons-icon-logo .fa {
+  background-color: #20C5BA;
+  padding: 10px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: 2px solid #F5F7FA;
+  margin-bottom: 5px;
+}
+
+.container .project-menu-tabs-content-panel-icons-icon-paraghraph {
+  font-size: 14px;
+}
+
+.container .project-menu-tabs-content-panel-icons-icon-subparaghraph {
+  font-size: 10px;
+  color: #9DB0CB;
+}
+
+.container .project-menu-tabs-content-panel-description {
+  margin-top: 20px;
+  display: flex;
+}
+
+.container .project-menu-tabs-content-panel-description-logo {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.container .project-menu-tabs-content-panel-description-logo .fa {
+  background-color: #20C5BA;
+  padding: 8px 8px 10px 10px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: 2px solid #F5F7FA;
+}
+
+.container .project-menu-tabs-content-panel-description-paraghraph {
+  line-height: 35px;
+  flex: 5;
+}
+
+.container .project-menu-tabs-content-panel-description-paraghraph-title {
+  font-size: 18px;
+}
+
+.container .project-menu-tabs-content-panel-description-paraghraph-text .fa-circle {
+  color: #20C5BA;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.container .project-menu-tabs-content-panel-git {
+  border: 2px solid #F5F7FA;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .project-menu-tabs-content-panel-git-logo {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.container .project-menu-tabs-content-panel-git-logo .fa {
+  background-color: #20C5BA;
+  padding: 8px 8px 10px 10px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: 2px solid #F5F7FA;
+}
+
+.container .project-menu-tabs-content-panel-git-paraghraph {
+  flex-grow: 3;
+}
+
+.container .project-menu-tabs-content-panel-git-author {
+  flex-grow: 2;
+  border: 2px solid #F5F7FA;
+  display: flex;
+  justify-content: center;
+}
+
+.container .project-menu-tabs-content-panel-git-author-name {
+  align-self: center;
+}
+
+.container .project-menu-tabs-button {
+  border: none;
+  padding: 15px 20px;
+  font-size: 19px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #E7ECF4;
+}
+
+.container .project-menu-tabs-button .fa {
+  margin-left: 5px;
+}
+
+.container .project-menu-tabs .active {
+  background-color: #FFFFFF;
+}
+
+.container .meeting {
+  flex-basis: 1140px;
+  display: flex;
+  padding: 50px 0px;
+  flex-direction: column;
+}
+
+.container .meeting-paraghraph-header {
+  display: flex;
+  justify-content: start;
+}
+
+.container .meeting-paraghraph-header-logo {
+  background-color: #20C5BA;
+  padding: 8px 8px 10px 10px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: 2px solid #F5F7FA;
+}
+
+.container .meeting-paraghraph-header-title {
+  align-self: center;
+  margin-right: 5px;
+}
+
+.container .meeting-tabs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.container .meeting-tabs-content {
+  margin-top: 20px;
+  display: none;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #20C5BA;
+  line-height: 45px;
+}
+
+.container .meeting-tabs-content-header {
+  color: #20C5BA;
+}
+
+.container .meeting-tabs-content-subheader {
+  color: #20C5BA;
+}
+
+.container .meeting-tabs-content-paraghrapgh {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.container .meeting-tabs-buttons {
+  padding-top: 15px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px solid #E7ECF4;
+}
+
+.container .meeting-tabs-buttons .active {
+  border-bottom: 3px solid #20C5BA;
+}
+
+.container .meeting-tabs-buttons-button {
+  border: none;
+  font-size: 16px;
+  font-family: IRANSans;
+  background-color: transparent;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  padding-bottom: 8px;
+}
+
+.container .meeting-tabs-buttons-button:hover {
+  border-bottom: 3px solid #20C5BA;
+}
+
+.container .form {
+  background-color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container .form-content {
+  width: 1140px;
+}
+
+.container .form-content-header {
+  padding: 40px 0px;
+}
+
+.container .form-content-header-title {
+  font-size: 18px;
+}
+
+.container .form-content-form-information {
+  background-color: #F5F7FA;
+  padding: 20px 0px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.container .form-content-form-information-title {
+  padding: 5px 10px;
+  border-right: 3px solid #20C5BA;
+}
+
+.container .form-content-form-information-fields {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.container .form-content-form-information-fields-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  flex-wrap: nowrap;
+}
+
+.container .form-content-form-information-fields-group-input {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 400px;
+}
+
+.container .form-content-form-information-fields-group-input label {
+  margin-left: 10px;
+}
+
+.container .form-content-form-information-fields-group-input input {
+  border: none;
+  width: 300px;
+  padding: 10px 28px;
+  border-radius: 5px;
+}
+
+.container .form-content-form-information-fields-group-input select {
+  background-color: #E7ECF4;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: #9DB0CB;
+  font-size: 14px;
+  flex-basis: 300px;
+}
+
+.container .form-content-form-information-fields-group-input option {
+  color: #9DB0CB;
+  padding: 10px;
+}
+
+.container .form-content-form-information-fields-group-input textarea {
+  border: none;
+  flex-grow: 2;
+}
+
+.container .form-content-form-information-fields .textarea {
+  justify-content: space-around;
+}
+
+.container .form-content-form-information-fields #description {
+  border: 2px solid #E7ECF4;
+  border-radius: 2px;
+}
+
+.container .form-content-form .subform {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .form-content-form .subform p {
+  color: #20C5BA;
+}
+
+.container .form-content-form .subform #submit {
+  background-color: #F5F7FA;
+  color: #9DB0CB;
+  transition: all 0.3s;
+  font-size: 14px;
+  width: 100%;
+}
+
+.container .form-content-form .subform #submit:hover {
+  background-color: #20C5BA;
+  color: #FFFFFF;
+}
+
+.container .success-project {
+  width: 100%;
+  height: 40vh;
+  background-color: #F5F7FA;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* On smaller screens, decrease text size */
+}
+
+.container .success-project-title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container .success-project li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.container .success-project-list {
+  margin: auto;
+  color: #20C5BA;
+}
+
+.container .success-project-list-arrow {
+  background-color: #E7ECF4;
+  padding: 15px 20px;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+.container .success-project-list-arrow:hover {
+  background-color: #20C5BA;
+}
+
+.container .success-project .next {
+  transform: rotate(180deg);
+}
+
+.container .success-project .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .container .success-project .prev,
+  .container .success-project .next,
+  .container .success-project .text {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=style1.css.map */

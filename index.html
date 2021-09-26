@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrarvan</title>
+    <link rel="stylesheet" href="style/style1.css">
+    <script src="https://use.fontawesome.com/1a9421fa1c.js"></script>
+<script src="js/function.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <section class="project-menu">
+            <div class="project-menu-paraghraph">
+                <h2 class="project-menu-paraghraph-title">
+                    فهرست پروژه ها
+                </h2>
+                <p class="project-menu-paraghraph-text">
+                    با فهرست پروژه‌های در جریان ابر آروان بیشتر آشنا شوید
+                </p>
+            </div>
+            <div class="project-menu-tabs">
+                    <button class="project-menu-tabs-button" onclick="open_tab(event, 'active_project')"><i class="fa fa-pencil-square-o"></i>پروژه های فعال</button>
+                    <button class="project-menu-tabs-button active" onclick="open_tab(event, 'valuating_project')"><i class="fa fa-circle-o-notch"></i>در حال ارزیابی</button>
+                    <button class="project-menu-tabs-button" onclick="open_tab(event, 'lunched_project')"><i class="fa fa-check-square-o"></i>پروژه های اجرا شده</button>
+                    <div id="active_project" class="project-menu-tabs-content">
+                        <h3>پروژه های فعال</h3>
+                        <p>Active</p>
+                      </div>
+                      <div id="lunched_project" class="project-menu-tabs-content">
+                        <h3>پروژه های اجرا شده</h3>
+                        <p>Lunched project</p>
+                      </div>
+                      <div id="valuating_project" class="project-menu-tabs-content">
+                        
+                        <div class="project-menu-tabs-content-accordion">
+                          <p class="project-menu-tabs-content-accordion-title"><i class="fa fa-circle"></i> Wordpress</p>
+                          <button class="project-menu-tabs-content-accordion-button" onclick="open_panel(event, 'wordpress')"><i class="fa fa-angle-down"></i></button>
+                        </div>
+                        
+                            <div class="project-menu-tabs-content-panel" id="wordpress">
+                              <div class="project-menu-tabs-content-panel-icons">
+                                  <div class="project-menu-tabs-content-panel-icons-icon">
+                                    <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                    <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">درخواست دهنده</p>
+                                    <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">CDN تیم</p>
+                                  </div>
+                                  <div class="project-menu-tabs-content-panel-icons-icon">
+                                    <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                    <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">روش و اجرا و ارائه</p>
+                                    <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Opensourse/Github</p>
+                                  </div>
+                                  <div class="project-menu-tabs-content-panel-icons-icon">
+                                    <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                    <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">زبان پروژه</p>
+                                    <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Python</p>
+                                  </div>
+                                  <div class="project-menu-tabs-content-panel-icons-icon">
+                                    <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                    <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">مبلغ پروژه</p>
+                                    <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">10,000,000 ریال</p>
+                                  </div>
+
+                              
+                                </div>
+                              <div class="project-menu-tabs-content-panel-description">
+                                  <div class="project-menu-tabs-content-panel-description-logo">
+                                    <i class="fa fa-edit"></i>
+                                  </div>
+                                  <div class="project-menu-tabs-content-panel-description-paraghraph">
+                                    <h2 class="project-menu-tabs-content-panel-description-paraghraph-title">
+                                        شرح پروژه
+                                    </h2>
+                                      <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                          <i class="fa fa-circle"></i>نرم افزاری برای انتقال یک دامنه به همراه تنظیمات آن از روی کلودفلر به آروان
+                                      </p>
+                                      <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                        <i class="fa fa-circle"></i>نیک دامنه را به همراه تنظیمات مربوطه از سرویس کلودفلر به آروان منتقل کند API Key این نرم افزار باید بتواند با دریافت
+                                    <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                      <i class="fa fa-circle"></i>حالت مطلوب میتواند یک وبسایت مستقل باشد و یا میتواند یک اسکریپتی که با دریافت اطلاعات مربوطه این کار را انجام دهد
+                                  </p>
+                                  </div>
+                              </div>
+                              <div class="project-menu-tabs-content-panel-git">
+                                  <div class="project-menu-tabs-content-panel-git-logo"><i class="fa fa-github"></i></div>
+                                  <div class="project-menu-tabs-content-panel-git-paraghraph">
+                                    <h3 class="project-menu-tabs-content-panel-git-paraghraph-title">صفحه گیت</h3>
+                                    <p class="project-menu-tabs-content-panel-git-paraghraph-link">https://github.com/features/codespaces</p>
+                                  </div>
+                                  <div class="project-menu-tabs-content-panel-git-author">
+                                    <img class="project-menu-tabs-content-panel-git-author-img" src="img/author.png" alt="">
+                                    <p class="project-menu-tabs-content-panel-git-author-name">توسط حسن سیدی</p>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="project-menu-tabs-content-accordion">
+                              <p class="project-menu-tabs-content-accordion-title"><i class="fa fa-circle"></i> Drupal Plugin</p>
+                              <button class="project-menu-tabs-content-accordion-button" onclick="open_panel(event, 'drupal')"><i class="fa fa-angle-down"></i></button>
+                            </div>
+                            
+                                <div class="project-menu-tabs-content-panel" id="drupal">
+                                  <div class="project-menu-tabs-content-panel-icons">
+                                    <div class="project-menu-tabs-content-panel-icons-icon">
+                                      <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">درخواست دهنده</p>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">CDN تیم</p>
+                                    </div>
+                                    <div class="project-menu-tabs-content-panel-icons-icon">
+                                      <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">روش و اجرا و ارائه</p>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Opensourse/Github</p>
+                                    </div>
+                                    <div class="project-menu-tabs-content-panel-icons-icon">
+                                      <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">زبان پروژه</p>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Python</p>
+                                    </div>
+                                    <div class="project-menu-tabs-content-panel-icons-icon">
+                                      <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">مبلغ پروژه</p>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">10,000,000 ریال</p>
+                                    </div>
+  
+                                
+                                  </div>
+                                <div class="project-menu-tabs-content-panel-description">
+                                    <div class="project-menu-tabs-content-panel-description-logo">
+                                      <i class="fa fa-edit"></i>
+                                    </div>
+                                    <div class="project-menu-tabs-content-panel-description-paraghraph">
+                                      <h2 class="project-menu-tabs-content-panel-description-paraghraph-title">
+                                          شرح پروژه
+                                      </h2>
+                                        <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                            <i class="fa fa-circle"></i>نرم افزاری برای انتقال یک دامنه به همراه تنظیمات آن از روی کلودفلر به آروان
+                                        </p>
+                                        <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                          <i class="fa fa-circle"></i>نیک دامنه را به همراه تنظیمات مربوطه از سرویس کلودفلر به آروان منتقل کند API Key این نرم افزار باید بتواند با دریافت
+                                      <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                        <i class="fa fa-circle"></i>حالت مطلوب میتواند یک وبسایت مستقل باشد و یا میتواند یک اسکریپتی که با دریافت اطلاعات مربوطه این کار را انجام دهد
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="project-menu-tabs-content-panel-git">
+                                    <div class="project-menu-tabs-content-panel-git-logo"><i class="fa fa-github"></i></div>
+                                    <div class="project-menu-tabs-content-panel-git-paraghraph">
+                                      <h3 class="project-menu-tabs-content-panel-git-paraghraph-title">صفحه گیت</h3>
+                                      <p class="project-menu-tabs-content-panel-git-paraghraph-link">https://github.com/features/codespaces</p>
+                                    </div>
+                                    <div class="project-menu-tabs-content-panel-git-author">
+                                      <img class="project-menu-tabs-content-panel-git-author-img" src="img/author.png" alt="">
+                                      <p class="project-menu-tabs-content-panel-git-author-name">توسط حسن سیدی</p>
+                                    </div>
+                                </div>
+                      </div>
+                      <div class="project-menu-tabs-content-accordion">
+                        <p class="project-menu-tabs-content-accordion-title"><i class="fa fa-circle"></i> Migrate From CloudFlare to Arvan</p>
+                        <button class="project-menu-tabs-content-accordion-button" onclick="open_panel(event, 'migrate')"><i class="fa fa-angle-down"></i></button>
+                      </div>
+                      
+                          <div class="project-menu-tabs-content-panel" id="migrate">
+                            <div class="project-menu-tabs-content-panel-icons">
+                                <div class="project-menu-tabs-content-panel-icons-icon">
+                                  <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                  <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">درخواست دهنده</p>
+                                  <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">CDN تیم</p>
+                                </div>
+                                <div class="project-menu-tabs-content-panel-icons-icon">
+                                  <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                  <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">روش و اجرا و ارائه</p>
+                                  <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Opensourse/Github</p>
+                                </div>
+                                <div class="project-menu-tabs-content-panel-icons-icon">
+                                  <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                  <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">زبان پروژه</p>
+                                  <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Python</p>
+                                </div>
+                                <div class="project-menu-tabs-content-panel-icons-icon">
+                                  <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                  <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">مبلغ پروژه</p>
+                                  <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">10,000,000 ریال</p>
+                                </div>
+
+                            
+                              </div>
+                            <div class="project-menu-tabs-content-panel-description">
+                                <div class="project-menu-tabs-content-panel-description-logo">
+                                  <i class="fa fa-edit"></i>
+                                </div>
+                                <div class="project-menu-tabs-content-panel-description-paraghraph">
+                                  <h2 class="project-menu-tabs-content-panel-description-paraghraph-title">
+                                      شرح پروژه
+                                  </h2>
+                                    <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                        <i class="fa fa-circle"></i>نرم افزاری برای انتقال یک دامنه به همراه تنظیمات آن از روی کلودفلر به آروان
+                                    </p>
+                                    <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                      <i class="fa fa-circle"></i>نیک دامنه را به همراه تنظیمات مربوطه از سرویس کلودفلر به آروان منتقل کند API Key این نرم افزار باید بتواند با دریافت
+                                  <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                    <i class="fa fa-circle"></i>حالت مطلوب میتواند یک وبسایت مستقل باشد و یا میتواند یک اسکریپتی که با دریافت اطلاعات مربوطه این کار را انجام دهد
+                                </p>
+                                </div>
+                            </div>
+                            <div class="project-menu-tabs-content-panel-git">
+                                <div class="project-menu-tabs-content-panel-git-logo"><i class="fa fa-github"></i></div>
+                                <div class="project-menu-tabs-content-panel-git-paraghraph">
+                                  <h3 class="project-menu-tabs-content-panel-git-paraghraph-title">صفحه گیت</h3>
+                                  <p class="project-menu-tabs-content-panel-git-paraghraph-link">https://github.com/features/codespaces</p>
+                                </div>
+                                <div class="project-menu-tabs-content-panel-git-author">
+                                  <img class="project-menu-tabs-content-panel-git-author-img" src="img/author.png" alt="">
+                                  <p class="project-menu-tabs-content-panel-git-author-name">توسط حسن سیدی</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="project-menu-tabs-content-accordion">
+                            <p class="project-menu-tabs-content-accordion-title"><i class="fa fa-circle"></i> IP WhiteList Script</p>
+                            <button class="project-menu-tabs-content-accordion-button" onclick="open_panel(event, 'ip')"><i class="fa fa-angle-down"></i></button>
+                          </div>
+                          
+                              <div class="project-menu-tabs-content-panel" id="ip">
+                                <div class="project-menu-tabs-content-panel-icons">
+                                    <div class="project-menu-tabs-content-panel-icons-icon">
+                                      <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">درخواست دهنده</p>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">CDN تیم</p>
+                                    </div>
+                                    <div class="project-menu-tabs-content-panel-icons-icon">
+                                      <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">روش و اجرا و ارائه</p>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Opensourse/Github</p>
+                                    </div>
+                                    <div class="project-menu-tabs-content-panel-icons-icon">
+                                      <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">زبان پروژه</p>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Python</p>
+                                    </div>
+                                    <div class="project-menu-tabs-content-panel-icons-icon">
+                                      <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">مبلغ پروژه</p>
+                                      <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">10,000,000 ریال</p>
+                                    </div>
+    
+                                
+                                  </div>
+                                <div class="project-menu-tabs-content-panel-description">
+                                    <div class="project-menu-tabs-content-panel-description-logo">
+                                      <i class="fa fa-edit"></i>
+                                    </div>
+                                    <div class="project-menu-tabs-content-panel-description-paraghraph">
+                                      <h2 class="project-menu-tabs-content-panel-description-paraghraph-title">
+                                          شرح پروژه
+                                      </h2>
+                                        <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                            <i class="fa fa-circle"></i>نرم افزاری برای انتقال یک دامنه به همراه تنظیمات آن از روی کلودفلر به آروان
+                                        </p>
+                                        <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                          <i class="fa fa-circle"></i>نیک دامنه را به همراه تنظیمات مربوطه از سرویس کلودفلر به آروان منتقل کند API Key این نرم افزار باید بتواند با دریافت
+                                      <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                        <i class="fa fa-circle"></i>حالت مطلوب میتواند یک وبسایت مستقل باشد و یا میتواند یک اسکریپتی که با دریافت اطلاعات مربوطه این کار را انجام دهد
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="project-menu-tabs-content-panel-git">
+                                    <div class="project-menu-tabs-content-panel-git-logo"><i class="fa fa-github"></i></div>
+                                    <div class="project-menu-tabs-content-panel-git-paraghraph">
+                                      <h3 class="project-menu-tabs-content-panel-git-paraghraph-title">صفحه گیت</h3>
+                                      <p class="project-menu-tabs-content-panel-git-paraghraph-link">https://github.com/features/codespaces</p>
+                                    </div>
+                                    <div class="project-menu-tabs-content-panel-git-author">
+                                      <img class="project-menu-tabs-content-panel-git-author-img" src="img/author.png" alt="">
+                                      <p class="project-menu-tabs-content-panel-git-author-name">توسط حسن سیدی</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="project-menu-tabs-content-accordion">
+                                <p class="project-menu-tabs-content-accordion-title"><i class="fa fa-circle"></i> cPanel Quick Installation
+                                </p>
+                                <button class="project-menu-tabs-content-accordion-button" onclick="open_panel(event, 'cpanel')"><i class="fa fa-angle-down"></i></button>
+                              </div>
+                              
+                                  <div class="project-menu-tabs-content-panel" id="cpanel">
+                                    <div class="project-menu-tabs-content-panel-icons">
+                                        <div class="project-menu-tabs-content-panel-icons-icon">
+                                          <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                          <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">درخواست دهنده</p>
+                                          <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">CDN تیم</p>
+                                        </div>
+                                        <div class="project-menu-tabs-content-panel-icons-icon">
+                                          <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                          <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">روش و اجرا و ارائه</p>
+                                          <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Opensourse/Github</p>
+                                        </div>
+                                        <div class="project-menu-tabs-content-panel-icons-icon">
+                                          <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                          <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">زبان پروژه</p>
+                                          <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Python</p>
+                                        </div>
+                                        <div class="project-menu-tabs-content-panel-icons-icon">
+                                          <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                          <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">مبلغ پروژه</p>
+                                          <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">10,000,000 ریال</p>
+                                        </div>
+        
+                                    
+                                      </div>
+                                    <div class="project-menu-tabs-content-panel-description">
+                                        <div class="project-menu-tabs-content-panel-description-logo">
+                                          <i class="fa fa-edit"></i>
+                                        </div>
+                                        <div class="project-menu-tabs-content-panel-description-paraghraph">
+                                          <h2 class="project-menu-tabs-content-panel-description-paraghraph-title">
+                                              شرح پروژه
+                                          </h2>
+                                            <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                                <i class="fa fa-circle"></i>نرم افزاری برای انتقال یک دامنه به همراه تنظیمات آن از روی کلودفلر به آروان
+                                            </p>
+                                            <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                              <i class="fa fa-circle"></i>نیک دامنه را به همراه تنظیمات مربوطه از سرویس کلودفلر به آروان منتقل کند API Key این نرم افزار باید بتواند با دریافت
+                                          <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                            <i class="fa fa-circle"></i>حالت مطلوب میتواند یک وبسایت مستقل باشد و یا میتواند یک اسکریپتی که با دریافت اطلاعات مربوطه این کار را انجام دهد
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="project-menu-tabs-content-panel-git">
+                                        <div class="project-menu-tabs-content-panel-git-logo"><i class="fa fa-github"></i></div>
+                                        <div class="project-menu-tabs-content-panel-git-paraghraph">
+                                          <h3 class="project-menu-tabs-content-panel-git-paraghraph-title">صفحه گیت</h3>
+                                          <p class="project-menu-tabs-content-panel-git-paraghraph-link">https://github.com/features/codespaces</p>
+                                        </div>
+                                        <div class="project-menu-tabs-content-panel-git-author">
+                                          <img class="project-menu-tabs-content-panel-git-author-img" src="img/author.png" alt="">
+                                          <p class="project-menu-tabs-content-panel-git-author-name">توسط حسن سیدی</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="project-menu-tabs-content-accordion">
+                                    <p class="project-menu-tabs-content-accordion-title"><i class="fa fa-circle"></i> Dynamic DNS</p>
+                                    <button class="project-menu-tabs-content-accordion-button" onclick="open_panel(event, 'dynamic')"><i class="fa fa-angle-down"></i></button>
+                                  </div>
+                                  
+                                      <div class="project-menu-tabs-content-panel" id="dynamic">
+                                        <div class="project-menu-tabs-content-panel-icons">
+                                            <div class="project-menu-tabs-content-panel-icons-icon">
+                                              <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                              <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">درخواست دهنده</p>
+                                              <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">CDN تیم</p>
+                                            </div>
+                                            <div class="project-menu-tabs-content-panel-icons-icon">
+                                              <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                              <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">روش و اجرا و ارائه</p>
+                                              <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Opensourse/Github</p>
+                                            </div>
+                                            <div class="project-menu-tabs-content-panel-icons-icon">
+                                              <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                              <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">زبان پروژه</p>
+                                              <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Python</p>
+                                            </div>
+                                            <div class="project-menu-tabs-content-panel-icons-icon">
+                                              <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                              <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">مبلغ پروژه</p>
+                                              <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">10,000,000 ریال</p>
+                                            </div>
+            
+                                        
+                                          </div>
+                                        <div class="project-menu-tabs-content-panel-description">
+                                            <div class="project-menu-tabs-content-panel-description-logo">
+                                              <i class="fa fa-edit"></i>
+                                            </div>
+                                            <div class="project-menu-tabs-content-panel-description-paraghraph">
+                                              <h2 class="project-menu-tabs-content-panel-description-paraghraph-title">
+                                                  شرح پروژه
+                                              </h2>
+                                                <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                                    <i class="fa fa-circle"></i>نرم افزاری برای انتقال یک دامنه به همراه تنظیمات آن از روی کلودفلر به آروان
+                                                </p>
+                                                <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                                  <i class="fa fa-circle"></i>نیک دامنه را به همراه تنظیمات مربوطه از سرویس کلودفلر به آروان منتقل کند API Key این نرم افزار باید بتواند با دریافت
+                                              <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                                <i class="fa fa-circle"></i>حالت مطلوب میتواند یک وبسایت مستقل باشد و یا میتواند یک اسکریپتی که با دریافت اطلاعات مربوطه این کار را انجام دهد
+                                            </p>
+                                            </div>
+                                        </div>
+                                        <div class="project-menu-tabs-content-panel-git">
+                                            <div class="project-menu-tabs-content-panel-git-logo"><i class="fa fa-github"></i></div>
+                                            <div class="project-menu-tabs-content-panel-git-paraghraph">
+                                              <h3 class="project-menu-tabs-content-panel-git-paraghraph-title">صفحه گیت</h3>
+                                              <p class="project-menu-tabs-content-panel-git-paraghraph-link">https://github.com/features/codespaces</p>
+                                            </div>
+                                            <div class="project-menu-tabs-content-panel-git-author">
+                                              <img class="project-menu-tabs-content-panel-git-author-img" src="img/author.png" alt="">
+                                              <p class="project-menu-tabs-content-panel-git-author-name">توسط حسن سیدی</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="project-menu-tabs-content-accordion">
+                                        <p class="project-menu-tabs-content-accordion-title"><i class="fa fa-circle"></i> CLI to work with CDN</p>
+                                        <button class="project-menu-tabs-content-accordion-button" onclick="open_panel(event, 'cli')"><i class="fa fa-angle-down"></i></button>
+                                      </div>
+                                      
+                                          <div class="project-menu-tabs-content-panel" id="cli">
+                                            <div class="project-menu-tabs-content-panel-icons">
+                                                <div class="project-menu-tabs-content-panel-icons-icon">
+                                                  <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                                  <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">درخواست دهنده</p>
+                                                  <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">CDN تیم</p>
+                                                </div>
+                                                <div class="project-menu-tabs-content-panel-icons-icon">
+                                                  <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                                  <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">روش و اجرا و ارائه</p>
+                                                  <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Opensourse/Github</p>
+                                                </div>
+                                                <div class="project-menu-tabs-content-panel-icons-icon">
+                                                  <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                                  <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">زبان پروژه</p>
+                                                  <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">Python</p>
+                                                </div>
+                                                <div class="project-menu-tabs-content-panel-icons-icon">
+                                                  <div class="project-menu-tabs-content-panel-icons-icon-logo"><i class="fa fa-calendar-plus-o"></i></div>
+                                                  <p class="project-menu-tabs-content-panel-icons-icon-paraghraph">مبلغ پروژه</p>
+                                                  <p class="project-menu-tabs-content-panel-icons-icon-subparaghraph">10,000,000 ریال</p>
+                                                </div>
+                
+                                            
+                                              </div>
+                                            <div class="project-menu-tabs-content-panel-description">
+                                                <div class="project-menu-tabs-content-panel-description-logo">
+                                                  <i class="fa fa-edit"></i>
+                                                </div>
+                                                <div class="project-menu-tabs-content-panel-description-paraghraph">
+                                                  <h2 class="project-menu-tabs-content-panel-description-paraghraph-title">
+                                                      شرح پروژه
+                                                  </h2>
+                                                    <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                                        <i class="fa fa-circle"></i>نرم افزاری برای انتقال یک دامنه به همراه تنظیمات آن از روی کلودفلر به آروان
+                                                    </p>
+                                                    <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                                      <i class="fa fa-circle"></i>نیک دامنه را به همراه تنظیمات مربوطه از سرویس کلودفلر به آروان منتقل کند API Key این نرم افزار باید بتواند با دریافت
+                                                  <p class="project-menu-tabs-content-panel-description-paraghraph-text"> 
+                                                    <i class="fa fa-circle"></i>حالت مطلوب میتواند یک وبسایت مستقل باشد و یا میتواند یک اسکریپتی که با دریافت اطلاعات مربوطه این کار را انجام دهد
+                                                </p>
+                                                </div>
+                                            </div>
+                                            <div class="project-menu-tabs-content-panel-git">
+                                                <div class="project-menu-tabs-content-panel-git-logo"><i class="fa fa-github"></i></div>
+                                                <div class="project-menu-tabs-content-panel-git-paraghraph">
+                                                  <h3 class="project-menu-tabs-content-panel-git-paraghraph-title">صفحه گیت</h3>
+                                                  <p class="project-menu-tabs-content-panel-git-paraghraph-link">https://github.com/features/codespaces</p>
+                                                </div>
+                                                <div class="project-menu-tabs-content-panel-git-author">
+                                                  <img class="project-menu-tabs-content-panel-git-author-img" src="img/author.png" alt="">
+                                                  <p class="project-menu-tabs-content-panel-git-author-name">توسط حسن سیدی</p>
+                                                </div>
+                                            </div>
+                                          </div>
+                      <div id="lunched_project" class="project-menu-tabs-content">
+                        <h3>پروژه های اجرا شده</h3>
+                        <p>London is the capital city of England.</p>
+                      </div>
+            </div>
+        </section>
+        <section class="meeting">
+          <div class="meeting-paraghraph">
+            <div class="meeting-paraghraph-header">
+              <div class="meeting-paraghraph-header-logo"><i class="fa fa-users"></i></div>
+              <h3 class="meeting-paraghraph-header-title">ساختار جلسات</h3>
+            </div>
+            <p class="meeting-paraghraph-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، </p>
+          </div>
+          <div class="meeting-tabs">
+            <div class="meeting-tabs-buttons">
+              <button class="meeting-tabs-buttons-button" onclick="open_tab_meeting(event, 'strategy')">جلسات استراتژی</button>
+              <button class="meeting-tabs-buttons-button" onclick="open_tab_meeting(event, 'governance')">جلسات حاکمیت</button>
+              <button class="meeting-tabs-buttons-button" onclick="open_tab_meeting(event, 'planning')">جلسات برنامه ریزی</button>
+              <button class="meeting-tabs-buttons-button" onclick="open_tab_meeting(event, 'product')">جلسات محصول</button>
+            </div>
+           
+<div class="meeting-tabs-content" id='strategy'>
+<h3 class="meeting-tabs-content-header">
+  جلسات استراتژی
+</h3>
+<p class="meeting-tabs-content-paraghrapgh">
+  هر یک سال یک بار مجموعه جلساتی‌ تحت عنوان جلسات برنامه‌ریزی استراتژیک برگزار می‌شود. براساس این جلسات تیم راهبری داستان
+  .یک‌ساله‌ی شرکت نگارش می‌شود OKR سال را می‌نویسد و پس از بحث و تبادل نظر
+</p>
+<h4 class="meeting-tabs-content-subheader">حاضرین</h4>
+<p class="meeting-tabs-content-paraghrapgh">
+  .تمامی اعضای شرکت می‌توانند در این جلسات حضور پیدا کنند. حضور راهبر‌های هر تیم در این جلسات اجباری است
+</p>
+</div>
+<div class="meeting-tabs-content" id='governance'>
+  <div class="meeting-tabs-content-header">
+    جلسات حاکمیت
+  </div>
+  
+  </div>
+  <div class="meeting-tabs-content" id='planning'>
+    <div class="meeting-tabs-content-header">
+      جلسات برنامه ریزی
+    </div>
+    
+    </div>
+    <div class="meeting-tabs-content" id='product'>
+      <div class="meeting-tabs-content-header">
+        جلسات محصول
+      </div>
+      
+      </div>
+          </div>
+        </section>
+        <section class="form">
+          <div class="form-content">
+            <div class="form-content-header">
+              <h2 class="form-content-header-title">فرم ثبت نام شبکه ابریارهای آروان</h2>
+              <p class="form-content-header-paraghraph"> در صورتی که مایل باشید می‌توانید از برای ما رزومه بفرستید، لطفا فرم زیر را پر کنید</p>
+            </div>
+           <form action="POST" class="form-content-form">
+             <div class="form-content-form-information">
+               <h3 class="form-content-form-information-title">اطلاعات فردی</h3>
+               <div class="form-content-form-information-fields">
+                 <div class="form-content-form-information-fields-group">
+                   <div class="form-content-form-information-fields-group-input">
+                    <label for="name">نام</label>
+                    <input type="text" id="name" name="name" placeholder="نام و نام خانوادگی" required>
+                   </div>
+                   <div class="form-content-form-information-fields-group-input">
+                  <label for="phone">تلفن</label>
+                   <input type="text" id="fname" name="phone" placeholder="09101220012" required> 
+                  </div>
+                </div>
+                
+                 <div class="form-content-form-information-fields-group">
+                  <div class="form-content-form-information-fields-group-input">
+                  <label for="email">ایمیل</label>
+                  <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                  </div>
+                  <div class="form-content-form-information-fields-group-input">
+                  <label for="company_name">نام شرکت</label>
+                  <input type="text" id="company_name" name="company_name" placeholder="نام شرکت یا سازمان">
+                </div> 
+                </div> 
+                </div>
+                
+                  
+               </div>
+               <div class="form-content-form-information">
+                <h3 class="form-content-form-information-title">سوابق و تجربیات</h3>
+                <div class="form-content-form-information-fields">
+                  <div class="form-content-form-information-fields-group">
+                    <div class="form-content-form-information-fields-group-input">
+                      <label for="resume">رزومه</label>
+                      <input type="file" id="resume" name="resume"  required>
+                    </div>
+                    <div class="form-content-form-information-fields-group-input">
+                      <label for="portfolio">پورتفولیو</label>
+                      <input type="file" id="portfolio" name="portfolio" placeholder="اختیاری">
+                   </div>
+                 </div>
+                 
+
+                 </div>
+                 
+                   
+                </div>
+                <div class="form-content-form-information">
+                  <h3 class="form-content-form-information-title">توضیحات تکمیلی</h3>
+                  <div class="form-content-form-information-fields">
+                    <div class="form-content-form-information-fields-group">
+                      <div class="form-content-form-information-fields-group-input">
+                        <label for="abryar_type">نوع ابریار</label>
+                        <select id="abryar_type" name="abryar_type">
+                           <option value="1">ابریار کوچ فنی</option>
+                           <option value="2">ابریار فنی</option>
+                           <option value="3">ابریار بازارچه</option>
+                           <option value="4">ابریار آموزش</option>
+                           <option value="5">ابریار فروش</option>
+                         </select>
+                      </div>
+                      <div class="form-content-form-information-fields-group-input">
+                        <label for="abryar_level">سطح ابریار</label>
+                        <select id="abryar_level" name="abryar_level">
+                            <option value="1">سطح 1</option>
+                            <option value="2">سطح 2</option>
+                            <option value="3">سطح 3</option>
+                         
+                          </select>
+                     </div>
+                   </div>
+                   <div class="form-content-form-information-fields-group textarea">
+                    <div class="form-content-form-information-fields-group-input textarea-label">
+                      <label for="email">توضیحات</label>
+                    </div>
+                    <div class="form-content-form-information-fields-group-input" id='description'>
+                      <textarea name="description" rows="10" placeholder="در صورتی نیاز به توضیحات تکمیلی لطفا در این باکس برای ما یادداشت بگذارید"></textarea>
+                   </div>
+                 </div>
+  
+                   </div>
+                   
+                     
+                  </div>
+                  <div class="form-content-form-information subform">
+                    <div class="form-content-form-information-fields-group-input">
+                      <p class="form-content-form-information-fields-group-input-notice">
+                        *پر کردن فیلدهایی که با ستاره مشخص شده ضروری است
+                      </p>
+                    </div>
+                    <div class="form-content-form-information-fields-group-input">
+                      <input type="submit" name="submit" id="submit" value="ثبت نام">
+                    </div>
+                  </div>
+             </div>
+           </form>
+   
+      </section>
+      <section class="success-project">
+        <h2 class="success-project-title">پروژه های موفق</h2>
+        <ul class="success-project-list">
+            <li><img class="success-project-list-arrow prev" onclick="plusSlides(-1)" src="img/arrow.png" alt=""></li>
+            <li><img class="success-project-list-img" src="img/pasargad.png" alt=""></li>
+            <li><img class="success-project-list-img" src="img/pasargad.png" alt=""></li>
+            <li><img class="success-project-list-img" src="img/pasargad.png" alt=""></li>
+            <li><img class="success-project-list-img" src="img/pasargad.png" alt=""></li>
+            <li><img class="success-project-list-img" src="img/pasargad.png" alt=""></li>
+            <li><img class="success-project-list-img" src="img/pasargad.png" alt=""></li>
+            <li><img class="success-project-list-img" src="img/pasargad.png" alt=""></li>
+            <li><img class="success-project-list-arrow next" onclick="plusSlides(1)" src="img/arrow.png" alt=""></li>
+        
+        </ul>
+    </section>
+    </div>
+</body>
+<script>
+
+</script>
+</html>

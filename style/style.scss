@@ -1,0 +1,608 @@
+$color_primary:#20C5BA;
+$color_gray:#F5F7FA;
+$color_light:#FFFFFF;
+$color_blue_gray:#E7ECF4;
+$color_dark_blue:#9DB0CB;
+
+@font-face {
+  font-family: Yekabakh-Medium;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../font/Yekan _Bakh_Medium.ttf');
+
+}
+
+@font-face {
+  font-family: Yekabakh-Hairline;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../font/Yekan Bakh EN 01 Hairline.ttf');
+
+}
+
+@font-face {
+  font-family: Yekabakh-Light;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../font/Yekan Bakh EN 03 Light.ttf');
+
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../font/eot/IRANSansWeb(FaNum)_Black.eot');
+  src: url('../font/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../font/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../font/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../font/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../font/eot/IRANSansWeb(FaNum)_Bold.eot');
+  src: url('../font/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../font/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../font/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../font/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../font/eot/IRANSansWeb(FaNum)_Medium.eot');
+  src: url('../font/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../font/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../font/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../font/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../font/eot/IRANSansWeb(FaNum)_Light.eot');
+  src: url('../font/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../font/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../font/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../font/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url('../font/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+  src: url('../font/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../font/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../font/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../font/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/eot/IRANSansWeb(FaNum).eot');
+  src: url('../font/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+    url('../font/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../font/woff/IRANSansWeb(FaNum).woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../font/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color_gray;
+  font-family: IRANSans;
+}
+
+.container {
+  display: flex;
+  background-color: $color_gray;
+  height: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .project-menu {
+
+    flex-basis: 1140px;
+    display: flex;
+    padding: 50px 0px;
+    flex-direction: column;
+
+    &-paraghraph {
+
+      text-align: center;
+    }
+
+    &-tabs {
+      background-color: transparent;
+      justify-content: end;
+
+      &-content:not(#valuating_project) {
+        display: none;
+
+      }
+
+      &-content {
+        background-color: $color_light;
+
+        &-accordion {
+
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: right;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+          display: flex;
+          justify-content: space-between;
+
+          .fa-circle {
+            color: $color_primary;
+            font-size: 10px;
+          }
+
+          &-button {
+            border: none;
+            padding: 8px 10px;
+            border-radius: 100%;
+            background-color: $color_gray;
+            color: $color_dark_blue;
+            transition: all 0.3s;
+
+            &:hover {
+              background-color: $color_primary;
+              color: $color_light;
+
+            }
+          }
+        }
+
+        &-panel {
+          padding: 0 18px;
+          display: none;
+
+          overflow: hidden;
+
+          &-icons {
+            display: flex;
+            justify-content: space-around;
+
+            &-icon {
+              background-color: $color_gray;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              text-align: center;
+
+              flex-basis: 170px;
+              height: 159px;
+              border-radius: 10px;
+              line-height: 20px;
+
+              &-logo {
+                .fa {
+                  background-color: $color_primary;
+                  padding: 10px;
+                  color: $color_light;
+                  border-radius: 5px;
+                  border: 2px solid $color_gray;
+                  margin-bottom: 5px;
+                }
+              }
+
+              &-paraghraph {
+                font-size: 14px;
+              }
+
+              &-subparaghraph {
+                font-size: 10px;
+                color: $color_dark_blue;
+              }
+            }
+          }
+
+          &-description {
+            margin-top: 20px;
+            display: flex;
+
+            &-logo {
+              flex-grow: 1;
+
+              text-align: center;
+
+              .fa {
+                background-color: $color_primary;
+                padding: 8px 8px 10px 10px;
+                color: $color_light;
+                border-radius: 5px;
+                border: 2px solid $color_gray;
+
+              }
+            }
+
+            &-paraghraph {
+              line-height: 35px;
+              flex: 5;
+
+              &-title {
+                font-size: 18px;
+              }
+
+              &-text {
+                .fa-circle {
+                  color: $color_primary;
+                  font-size: 10px;
+                  margin-left: 5px;
+                }
+              }
+            }
+          }
+
+          &-git {
+            border: 2px solid $color_gray;
+            border-radius: 10px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+
+            &-logo {
+
+              flex-grow: 1;
+
+              text-align: center;
+
+              .fa {
+                background-color: $color_primary;
+                padding: 8px 8px 10px 10px;
+                color: $color_light;
+                border-radius: 5px;
+                border: 2px solid $color_gray;
+
+              }
+            }
+
+            &-paraghraph {
+              flex-grow: 3;
+            }
+
+            &-author {
+              flex-grow: 2;
+              border: 2px solid $color_gray;
+
+              display: flex;
+              justify-content: center;
+
+              &-img {}
+
+              &-name {
+                align-self: center;
+              }
+            }
+          }
+        }
+      }
+
+      &-button {
+        border: none;
+        padding: 15px 20px;
+        font-size: 19px;
+        border-radius: 15px 15px 0px 0px;
+        background-color: $color_blue_gray;
+
+        .fa {
+          margin-left: 5px;
+        }
+
+      }
+
+      .active {
+        background-color: $color_light;
+      }
+    }
+  }
+
+  .meeting {
+
+    flex-basis: 1140px;
+    display: flex;
+    padding: 50px 0px;
+    flex-direction: column;
+
+    &-paraghraph {
+
+      &-header {
+
+        display: flex;
+        justify-content: start;
+
+        &-logo {
+          background-color: $color_primary;
+          padding: 8px 8px 10px 10px;
+          color: $color_light;
+          border-radius: 5px;
+          border: 2px solid $color_gray;
+        }
+
+        &-title {
+          align-self: center;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    &-tabs {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      &-content {
+        margin-top: 20px;
+        display: none;
+        background-color: $color_light;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid $color_primary;
+        line-height: 45px;
+        
+        &-header{
+          color: $color_primary;
+        }
+        &-subheader{
+          color: $color_primary;
+        }
+        &-paraghrapgh{
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+
+      &-buttons {
+        padding-top: 15px;
+
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-around;
+border-bottom:3px solid $color_blue_gray;
+.active{
+  border-bottom: 3px solid $color_primary;
+}
+        &-button {
+          border: none;
+          font-size: 16px;
+          font-family: IRANSans;
+          background-color: transparent;
+          border-bottom: 3px solid transparent;
+          transition: all 0.3s;
+          padding-bottom: 8px;
+
+          &:hover {
+           border-bottom: 3px solid $color_primary;
+          }
+
+        }
+      }
+    }
+  }
+  .form{
+   background-color: $color_light;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &-content{
+      &-header{
+        padding:40px 0px;
+        &-title{
+          font-size: 18px;
+        }
+      }
+      width: 1140px;
+      &-form{
+        &-information{
+          background-color: $color_gray;
+          padding: 20px 0px;
+          border-radius: 5px;
+          margin-top: 20px;
+          &-title{
+            padding: 5px 10px;
+            border-right: 3px solid $color_primary;
+          }
+          &-fields{
+           
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            &-group{
+              display: flex;
+              justify-content: space-around;
+              margin-top: 10px;
+           flex-wrap: nowrap;
+              &-input{
+               display: flex;
+               justify-content: space-between;
+                flex-basis:400px;
+               
+                label{
+                  margin-left: 10px;
+                }
+                input{
+                  border: none;
+                 width: 300px;
+                 padding: 10px 28px;
+                 border-radius: 5px;
+                }
+                select{
+                  background-color:$color_blue_gray;
+                  border: none;
+                  border-radius: 5px;
+                  padding: 10px 10px;
+                  color: $color_dark_blue;
+                  font-size: 14px;
+                  flex-basis: 300px;
+                
+                }
+                option{
+                  color: $color_dark_blue;
+                  padding: 10px;
+                }
+                textarea{
+                  border:none;
+                  flex-grow:2;
+                 
+                }
+              }
+              .textarea-label{
+                
+                
+              }
+            }
+            .textarea{
+              
+              justify-content:space-around;
+            }
+            #description{
+           border: 2px solid $color_blue_gray;
+              border-radius: 2px
+              ;
+          }
+          }
+        }
+        .subform{
+          background-color: transparent;
+          display: flex;
+          justify-content: space-between;
+          p{
+            color: $color_primary;
+          }
+          #submit{
+            background-color: $color_gray;
+            color: $color_dark_blue;
+            transition: all 0.3s;
+            font-size: 14px;
+            width: 100%;
+            &:hover{
+              background-color: $color_primary;
+            color: $color_light;
+            }
+          }
+        }
+      }
+    }
+  }
+  .success-project {
+
+    width: 100%;
+    height: 40vh;
+    background-color: $color_gray;
+    bottom: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    &-title {
+  
+      text-align: center;
+      margin-top:30px;
+    
+    }
+  
+    li {
+  
+      display: inline-block;
+      margin: 0px 20px;
+    }
+  
+    &-list {
+      margin: auto;
+      color: $color_primary;
+   
+      &-arrow {
+        background-color: $color_blue_gray;
+        padding: 15px 20px;
+        border-radius: 100%;
+        transition: all 0.3s;
+    
+        &:hover {
+          background-color: $color_primary;
+        }
+    
+      }
+    }
+  
+  
+  
+    .next {
+      transform: rotate(180deg);
+    }
+  
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+  
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+  
+      to {
+        opacity: 1
+      }
+    }
+  
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+  
+      to {
+        opacity: 1
+      }
+    }
+  
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+  
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+  
+  }
+}
